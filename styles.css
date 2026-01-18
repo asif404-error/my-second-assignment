@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+    background-color: rgba(26, 11, 46, 1);
+}
+
+/* all nav related styles */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    margin: 0 auto;
+}
+
+.logo{
+    height: 35px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    padding: 25px;
+    transition: 0.3s ease;
+}
+
+.btn-sub-button{
+    background: linear-gradient(45deg, #F7E93F, #FB09B4, #9100F8);
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-sub-button:hover{
+    transform: scale(1.05);
+}
