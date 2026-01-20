@@ -651,7 +651,7 @@ background-color: transparent;
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat; 
-  padding: 100px 40px;
+  padding:75px 40px;
   text-align: center;
   min-height: 100px;
 }
@@ -775,9 +775,9 @@ background-color: transparent;
 .stats-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
+  gap: 10px;
+  
+  
 }
 
 .section-title {
@@ -804,7 +804,7 @@ h3 {
   background-color: transparent;
 }
 
-.item-2,.item-3,.item-4,.item-5{
+.item-1,.item-2,.item-3,.item-4,.item-5{
   grid-column: 1/3;
 }
 
