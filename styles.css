@@ -78,6 +78,10 @@ body{
   border-radius: 2px;
   transition: 0.3s;
 }
+ul{
+  margin: 0px;
+  padding: 0px;
+}
 
 .nav-links-mobile {
   position: absolute;
