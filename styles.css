@@ -14,7 +14,7 @@ body{
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  
 }
 
 .nav-bar {
@@ -290,7 +290,7 @@ ul{
   margin: 0 auto;
 }
 
-.stats-container {
+.stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
@@ -649,6 +649,10 @@ background-color: transparent;
   padding: 20px 40px;
   margin: 0 auto;
 }
+ul{
+  margin: 0px;
+  padding: 0px;
+}
 
 .hero-section {
   background-image: url('./assets/hero-bg.png');
@@ -776,12 +780,36 @@ background-color: transparent;
   margin: 0 auto;
 }
 
-.stats-container {
-  display: grid;
+.stats {
+  
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the container on the page */
+  display: grid;
   
   
+}
+.stat-box {
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.stat-box h3 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00ff88;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+
+.stat-box p {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .section-title {
