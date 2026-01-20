@@ -785,7 +785,7 @@ ul{
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   max-width: 1200px;
-  margin: 0 auto; /* Centers the container on the page */
+  margin: 0 auto;
   display: grid;
   
   
