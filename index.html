@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="inter-font">
-    <!-- nav bar starts from here -->
+  
     <nav class="nav-bar">
       <div class="logo">
         <a href=""
@@ -23,7 +23,59 @@
         Subscribe<img class="btn-arrow" src="./assets/ArrowRight.svg" alt="" />
       </button>
     </nav>
-    <!-- about the podcast section starts from here -->
+    <nav class="navbar">
+      <div class="logo">
+        <a href=""
+          ><img src="./assets/TechWave-nav-bar-logo.png" alt="nav-bar-logo"
+        /></a>
+      </div>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <ul class="nav-links-mobile">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Episodes</a></li>
+        <li><a href="#">Host</a></li>
+        <li><a href="#">Subscribe</a></li>
+      </ul>
+    </nav>
+    
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="podcast-circle">
+          <span class="new-badge">NEW</span>
+          <img
+            src="./assets/microphone.png"
+            alt="Microphone"
+            class="mic-icon"
+          />
+        </div>
+
+        <h1>TechWave</h1>
+
+        <p class="hero-description">
+          Your daily dose of tech insights, productivity hacks, and personal
+          growth
+        </p>
+
+        <div class="hero-buttons">
+          <button class="btn-primary">
+            <img src="./assets/spotify.png" alt="" /> Listen On Spotify
+          </button>
+          <button class="btn-secondary">
+            <img src="./assets/message.png" alt="" /> Subscribe
+          </button>
+        </div>
+      </div>
+    </section>
+  
     <section class="about-podcast">
       <div class="about-content">
         <h2>About The Podcast</h2>
@@ -60,7 +112,7 @@
         </div>
       </div>
     </section>
-    <!-- choose techwave part starts from here -->
+  
     <section class="features">
       <div class="container">
         <h2 class="section-title">Why Choose TechWave</h2>
@@ -105,16 +157,21 @@
         </div>
       </div>
     </section>
-    <!-- featured episodes and meet the host part starts from here -->
+  
     <section class="featured-episodes">
       <h2>Featured Episodes</h2>
       <div class="episodes-container">
         <div class="episode-card">
           <div class="episode-image">
             <img src="./assets/Future of AI.png" alt="" />
-            <div class="play-button">
-              <img src="./assets/youtube-podcast.png" alt="" />
-            </div>
+            <a
+              href="https://youtu.be/MPXXmeW7dHI?list=PL3Xso75sMgAG4o1_gMBqOet2vM_M5rbw_"
+              target="_blank"
+            >
+              <div class="play-button">
+                <img src="./assets/mdi_play.png" alt="" />
+              </div>
+            </a>
           </div>
           <div class="episode-content">
             <h3>The Future of AI in Everyday Life</h3>
@@ -133,10 +190,15 @@
 
         <div class="episode-card">
           <div class="episode-image">
-            <img src="./assets/Building Better Habbits.png" alt="" />
-            <div class="play-button">
-              <img src="./assets/youtube-podcast.png" alt="" />
-            </div>
+            <a
+              href="https://youtu.be/pHVtXhRHMa8?list=PL3Xso75sMgAG4o1_gMBqOet2vM_M5rbw_"
+              target="_blank"
+            >
+              <img src="./assets/Building Better Habbits.png" alt="" />
+              <div class="play-button">
+                <img src="./assets/mdi_play.png" alt="" />
+              </div>
+            </a>
           </div>
           <div class="episode-content">
             <h3>Building Better Habits for Remote Work</h3>
@@ -152,13 +214,16 @@
             </div>
           </div>
         </div>
-
         <div class="episode-card">
           <div class="episode-image">
-            <img src="./assets/A Roadmap.png" alt="" />
-            <div class="play-button">
-              <img src="./assets/youtube-podcast.png" alt="" />
-            </div>
+            <a
+              href="https://youtu.be/tCBa-IuTQaM?list=PL3Xso75sMgAG4o1_gMBqOet2vM_M5rbw_"
+            >
+              <img src="./assets/A Roadmap.png" alt="" />
+              <div class="play-button">
+                <img src="./assets/mdi_play.png" alt="" />
+              </div>
+            </a>
           </div>
           <div class="episode-content">
             <h3>Career Growth in Tech: A Roadmap</h3>
@@ -178,47 +243,54 @@
     </section>
     <section class="meet-host">
       <h2>Meet The Host</h2>
-      <div class="host-container">
-        <div class="host-image">
-          <img src="./assets/host.png" alt="Alex Kumar" />
-        </div>
-        <div class="host-content">
-          <h3>Alex Kumar</h3>
-          <p>
-            Tech entrepreneur, productivity expert, and lifelong learner. Alex
-            has been in the tech industry for over 10 years, working with
-            startups and Fortune 500 companies. Through TechWave, Alex shares
-            insights from industry leaders and practical advice for anyone
-            looking to grow in tech.
-          </p>
+      <div class="host-ct">
+        <div class="host-container">
+          <div class="host-image">
+            <img src="./assets/host.png" alt="Alex Kumar" />
+          </div>
+          <div class="host-content">
+            <h3>Alex Kumar</h3>
+            <p>
+              Tech entrepreneur, productivity expert, and lifelong learner. Alex
+              has been in the tech industry for over 10 years, working with
+              startups and Fortune 500 companies. Through TechWave, Alex shares
+              insights from industry leaders and practical advice for anyone
+              looking to grow in tech.
+            </p>
 
-          <div class="social-links">
-            <a href="#"><img src="./assets/linkedin.png" alt="LinkedIn" /></a>
-            <a href="#"><img src="./assets/x.png" alt="X" /></a>
-            <a href="#"><img src="./assets/instagram.png" alt="Instagram" /></a>
-            <a href="#"><img src="./assets/youtube.png" alt="YouTube" /></a>
+            <div class="social-links">
+              <a href="#"><img src="./assets/linkedin.png" alt="LinkedIn" /></a>
+              <a href="#"><img src="./assets/x.png" alt="X" /></a>
+              <a href="#"
+                ><img src="./assets/instagram.png" alt="Instagram"
+              /></a>
+              <a href="#"><img src="./assets/youtube.png" alt="YouTube" /></a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- footer section starts from here -->
+  
     <footer class="footer-container">
-      <div class="footer-logo">
-        <img src="./assets/TechWave-footer-logo.png" alt="" />
-      </div>
-      <div class="footer-links">
-        <p><img src="./assets/spotify.png" alt="spotify logo" />Spotify</p>
-        <p>
-          <img src="./assets/apple-podcast.png" alt="apple podcast logo" />Apple
-          Podcast
-        </p>
-        <p>
-          <img src="./assets/youtube-podcast.png" alt="youtube logo" />YouTube
-        </p>
-        <p><img src="./assets/twitter.png" alt="twitter logo" />Twitter</p>
-      </div>
-      <div class="copyright-text">
-        &copy; 2026 TechWave Podcast. All Rights Reserved
+      <div class="footer-content">
+        <img src="./assets/23.png" alt="" />
+
+        <div class="footer-links">
+          <p><img src="./assets/spotify.png" alt="spotify logo" />Spotify</p>
+          <p>
+            <img
+              src="./assets/apple-podcast.png"
+              alt="apple podcast logo"
+            />Apple Podcast
+          </p>
+          <p>
+            <img src="./assets/youtube-podcast.png" alt="youtube logo" />YouTube
+          </p>
+          <p><img src="./assets/twitter.png" alt="twitter logo" />Twitter</p>
+        </div>
+        <div class="copyright-text">
+          &copy; 2026 TechWave Podcast. All Rights Reserved
+        </div>
       </div>
     </footer>
   </body>
